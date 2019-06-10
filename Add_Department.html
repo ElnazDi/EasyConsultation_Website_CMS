@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Easy Consultation | Admin</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="Hospitals, Cliniks, Doctors, Serial Number">
+    <meta name="description" content="Web applicatin for getting online reservation time">
+    <meta name="author" content="Elnaz Dehkhargahni,Abdul Sattar Nayeem Ahmed, Monika Hortobagyi, Zele Zoltan">
+    <link rel="shortcut icon" type="image/png" href="img/faveicon.png"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style-cms.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+
+
+    <style>
+
+  h2{
+      margin:0;
+      padding: 0 0 20px;
+      color: rgba(18, 27, 204, 1);
+      text-align: center;
+      font-size: 25px;
+      font-weight: bold;
+  }
+
+.registerBox{
+top: 85%;
+height:730px;
+}
+
+select{
+    background: rgba(0,0,0,0.3);
+    color:#fff;
+    text-shadow:0 1px 0 rgba(0,0,0,0.4);
+    border: none;
+    border-radius: 10px;
+}
+
+input[type="time"] {
+    background: rgba(0,0,0,0.3);
+    color:#fff;
+    text-shadow:0 1px 0 rgba(0,0,0,0.4);
+    border: none;
+    border-radius: 10px;
+}
+
+input[type="file"]
+{
+  display: none;
+}
+
+.file-upload{
+    border: 1px solid white;
+    border-radius: 15px;
+    display: block;
+    padding: 6px 12px;
+    cursor: pointer;
+    width: 180px;
+    height:40px;
+    background-color: white;
+}
+  </style>
+
+</head>
+
+<body>
+
+<!--------------------Head------------------->
+    <nav class="navbar navbar-default">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Easy Consultation</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="Index-admin.html">Dashboard</a></li>
+            <li><a href="Hospitals.html">Hospitals</a></li>
+            <li class="active"><a href="Departments.html">Departments</a></li>
+            <li><a href="Doctors.html">Doctors</a></li>
+            <li><a href="Paitients.html">Patients</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#">Welcome, Admin</a></li>
+            <li><a href="login.html">Logout</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+    <header id="header">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-10">
+              <!--This link from bootstrap component : https://getbootstrap.com/docs/3.3/components/-- cog is our wheel -->
+            <h1><span class="glyphicon glyphicon-cog" aria-hidden="true"></span> Dashboard <small>Manage Your Site</small></h1>
+          </div>
+          </div>
+          </div>
+    </header>
+
+<!--------------------Department: Add/Edit  ------------------->
+<section>
+<div class="registerBox">
+<h2>ADD DEPARTMENT</h2>
+<form action="#">
+
+<p>Department Name:</p> <input type="text" autocomplete="on" placeholder="Department Name..." required="required" > <br><br>
+<p>Description:</p> <input type="text" autocomplete="on" placeholder="Description..." required="required" ><br><br>
+<p>Department Working Days and Hours - Select Doctor:</p>   <br>
+<div class="add">
+<p style="display:inline">Day:</p>
+<select style="height:30px">
+  <option value="Monday">Monday</option>
+  <option value="Tuesday">Tuesday</option>
+  <option value="Wednesday">Wednesday</option>
+  <option value="Thursday">Thursday</option>
+  <option value="Friday">Friday</option>
+  <option value="Saturday">Saturday</option>
+  <option value="Sunday">Sunday</option>
+</select>
+<p style="display:inline; margin-right: 10px;margin-left: 10px">From:</p><input type="time" style="width: 15%;height:30px">
+<p style="display: inline;margin-right: 10px;margin-left: 10px">To:</p><input type="time" style="width: 15%; height:30px">
+<p style="display: inline;margin-right: 10px;margin-left: 10px">Doctor:</p>
+<select style="height:30px">
+  <option value="A">AAAAAA</option>
+  <option value="B">BBBBBB</option>
+  <option value="C">CCCCCC</option>
+</select>
+<input type="image" src="img/delete.png" alt="Remove" style="width: 23px; height: 20px;float: right;margin-top: 5px">
+<input type="image" src="img/add.png" alt="Add" style="width: 23px; height: 20px ; float: right ;margin-top: 5px">
+</div>
+<br><br>
+
+<div class="pic" style="margin-left: 150px; margin-bottom: 50px">
+<img  src="img/building-placeholder.png" style="float: left" style="width: 200px;height: 200px">
+<label class="file-upload" style="float: left; margin-left: 30px;margin-top: 60px">
+<input type="file">
+<p style="display: inline;margin-left: 20px; color: blue; font-size: 12px;margin-left: 14px">Edit Department Image</p>
+</label>
+</div>   <br>
+
+
+<input type="submit" name="" value="Save Changes" style="width: 50%; margin-left: 25%;margin-top: 20px">
+</form>
+</div>
+</section>
+
+<!--------------------------------------Footer-------------------------------------------->
+
+</body>
+</html>

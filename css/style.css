@@ -1,0 +1,313 @@
+/*-------------------whole body of website----------------*/
+body{
+     font-family:   Arial, Helvetica, sans-serif;
+     font-size: 15px;
+     line-height: 1.5;
+     padding: 0;
+     margin: 0;
+     background-color: rgba(227, 227, 227, 1);
+}
+
+
+/*-----------------------for all buttons-----------------------*/
+
+.button_1 {
+    border: none;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    font-size: 16px;
+    background: rgba(48, 33, 204, 1);
+    cursor: pointer;
+    border-radius: 20px;
+    width: 130px;
+}
+
+.button_1:hover{
+    background:white;
+    color: black;
+}
+
+/*-----------------------Login Patient-----------------------*/
+
+.loginBox{
+position: absolute;
+padding:80px 40px;
+top: 60%;
+left:50%;
+transform: translate(-50%,-50%);
+width:350px;
+height:450px;
+box-sizing:  border-box;
+background: rgba(0,0,0,.5);
+
+
+}
+
+.loginBox p{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    color: white;
+}
+
+.loginBox input{
+    width:100%;
+    margin-bottom: 20px;
+
+}
+
+.loginBox input[type="text"],
+.loginBox input[type="password"]
+{
+    border:none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    font-size: 16px;
+}
+
+::palceholder
+{
+    color:rgb(255,255,255,.5);
+}
+
+.loginBox input[type="submit"] {
+    border: none;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    font-size: 16px;
+    background: rgba(48, 33, 204, 1);
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+.loginBox input[type="submit"]:hover{
+    background:white;
+    color: black;
+}
+
+.loginBox a{
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+}
+
+/*-----------------------Register Patient-----------------------*/
+
+
+.registerBox{
+position: absolute;
+padding:80px 40px;
+top: 155%;
+left:50%;
+transform: translate(-50%,-50%);
+width:750px;
+height:1650px;
+box-sizing:  border-box;
+background: rgba(0,0,0,.5);
+}
+
+.registerBox p{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    color: white;
+}
+
+.registerBox input{
+    width:100%;
+    margin-bottom: 20px;
+
+}
+
+.registerBox input[type="text"],
+.registerBox input[type="password"]
+{
+    border:none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    font-size: 16px;
+}
+
+::palceholder
+{
+    color:rgb(255,255,255,.5);
+}
+
+.registerBox input[type="date"]
+{
+    border:none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    font-size: 16px;
+}
+
+.registerBox input[type="submit"] {
+    border: none;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    font-size: 16px;
+    background: rgba(48, 33, 204, 1);
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+.registerBox input[type="submit"]:hover{
+    background:white;
+    color: black;
+}
+
+.registerBox a{
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+}
+
+
+
+/*-----------------------------Inside of each seprator os dives-------------------------*/
+.Container{
+    width:80%;       /*% Responsive - 80% to have some space from edges*/
+    margin: auto;   /*Float in the middle*/
+    overflow: hidden;    /*we dont want to scroll*/
+}
+
+/*----------------------------------------------Header----------------------------------*/
+
+header{
+    background: rgba(59, 59, 59, 1);
+    color: white;
+    padding-top: 30px;
+    min-height:70px;    /*Instead of height I used min-height to be responsive and nav comes down*/
+    border-bottom: rgba(27, 11, 204, 1) 6px solid;
+}
+
+header #logo
+{
+    float: left;
+}
+
+header #logo h1{
+    margin: 0;
+}
+
+header nav{
+    float: right;
+    margin-top: 10px;
+}
+
+header .highlight, header .current a{
+    color: blue;
+    font-weight: bold;
+}
+
+header a{
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+header a:hover{
+      font-weight: bold;
+      font-size: 19px;
+      text-shadow: 1px 1px 3px #FFFFFF;
+
+}
+
+
+header li{
+    float: left;        /*our menu should be horizentali*/
+    display: inline;    /*like span*/
+    padding: 0 20px 0 20px;    /*Only right and left have some space*/
+}
+/*-----------------------For all ULs-----------------------*/
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+/*----------------------------------------------Slide----------------------------------*/
+
+#slide{
+    min-height: 400px;
+    background: url(../img/slide.jpg) no-repeat;
+    text-align: center;
+}
+
+#slide h1{
+    margin-top: 100px;
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+#slide p{
+    font-size: 20px;
+}
+
+/*----------------------------------------------Search----------------------------------*/
+   #search{
+         padding:50px;
+         color: white;
+         background: rgba(59, 59, 59, 1);
+
+   }
+
+   #search h1{
+       float: left;
+   }
+
+   #search form{
+       float: right;
+       margin-top: 15px;
+   }
+
+   #search input[type="search"]{
+       padding: 15px;
+       height: 42px;
+       width: 550px;
+   }
+
+  /*--------------------------------------------Places----------------------------------*/
+  #places{
+      margin-top: 20px;
+
+  }
+
+  #places .Places{
+      float: left;
+      width:30%;
+      padding: 10px;
+      text-align: center;
+  }
+
+  #places .Places img{
+        width:90px;
+        height:90px;
+  }
+
+  /*--------------------------------------------Footers----------------------------------*/
+  footer{
+      padding: 20px;
+      margin-top: 20px;
+      color: white;
+      background-color:rgba(59, 59, 59, 1);
+      text-align: center;
+  }
+

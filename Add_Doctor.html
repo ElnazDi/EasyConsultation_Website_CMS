@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Easy Consultation | Admin</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="Hospitals, Cliniks, Doctors, Serial Number">
+    <meta name="description" content="Web applicatin for getting online reservation time">
+    <meta name="author" content="Elnaz Dehkhargahni,Abdul Sattar Nayeem Ahmed, Monika Hortobagyi, Zele Zoltan">
+    <link rel="shortcut icon" type="image/png" href="img/faveicon.png"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style-cms.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+
+
+    <style>
+
+  h2{
+      margin:0;
+      padding: 0 0 20px;
+      color: rgba(18, 27, 204, 1);
+      text-align: center;
+      font-weight: bold;
+  }
+
+  .registerBox{
+top: 80%;
+height:640px;
+}
+  </style>
+
+</head>
+
+<body>
+
+<!--------------------Head------------------->
+
+    <nav class="navbar navbar-default">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Easy Consultation</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="Index-admin.html">Dashboard</a></li>
+            <li><a href="Hospitals.html">Hospitals</a></li>
+            <li><a href="Departments.html">Departments</a></li>
+            <li class="active"><a href="Doctors.html">Doctors</a></li>
+            <li><a href="Paitients.html">Patients</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#">Welcome, Admin</a></li>
+            <li><a href="login.html">Logout</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+    <header id="header">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-10">
+              <!--This link from bootstrap component : https://getbootstrap.com/docs/3.3/components/-- cog is our wheel -->
+            <h1><span class="glyphicon glyphicon-cog" aria-hidden="true"></span> Dashboard <small>Manage Your Site</small></h1>
+          </div>
+          </div>
+          </div>
+    </header>
+
+
+<!--------------------Register------------------->
+<section>
+<div class="registerBox">
+<h2>ADD DOCTOR</h2>
+<form action="#">
+
+<p>Doctor`s First Name:</p> <input type="text" autocomplete="on" placeholder="First Name..." required="required" > <br><br>
+<p>Doctor`s Last Name:</p> <input type="text" autocomplete="on" placeholder="Last Name..." required="required" ><br><br>
+<p>Phone Number:</p> <input type="text" autocomplete="on" placeholder="Phone Number..." required="required" > <br><br>
+<p>E.mail:</p> <input type="text" autocomplete="on" placeholder="E.mail..." required="required" >  <br><br>
+<input type="submit" name="" value="Add Doctor" style=" width:50%; margin-left: 25%">
+</form>
+</div>
+</section>
+
+<!--------------------------------------Footer-------------------------------------------->
+
+
+</body>
+</html>
